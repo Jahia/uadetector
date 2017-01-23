@@ -1,6 +1,16 @@
 UADetector
 ==========
 
+Fork of UADetector to add newly discovered regex to the UA string data store.
+
+Clone and test:
+```
+git clone
+cd uadetector/examples/helloworld/
+mvn clean package jetty:run
+```
+Then connect with a browser to http://localhost:8383/
+
 
 What is UADetector?
 -----
