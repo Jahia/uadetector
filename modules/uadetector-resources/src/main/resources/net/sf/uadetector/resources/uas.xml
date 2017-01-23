@@ -20413,6 +20413,16 @@
 				<icon>mxnitro.png</icon>
 				<browser_info_url>/list-of-ua/browser-detail?browser=MxNitro</browser_info_url>
 			</browser>
+			<browser>
+				<id>100035</id>
+				<type>0</type>
+				<name>Microsoft Edge</name>
+				<url><![CDATA[http://en.wikipedia.org/wiki/Microsoft_Edge]]></url>
+				<company><![CDATA[Microsoft Corporation.]]></company>
+				<url_company><![CDATA[http://www.microsoft.com/]]></url_company>
+				<icon>msie.png</icon>
+				<browser_info_url>/list-of-ua/browser-detail?browser=Microsoft Edge</browser_info_url>
+			</browser>
 		</browsers>
 		<browser_types>
 			<browser_type>
@@ -20461,6 +20471,11 @@
 			</browser_type>
 		</browser_types>
 		<browsers_reg>
+			<browser_reg>
+				<order>-1</order>
+				<browser_id>100035</browser_id>
+				<regstring>/^Mozilla.*Windows NT 10\..*Chrome.*Safari.*Edge\/([0-9\.]+)/si</regstring>
+			</browser_reg>
 			<browser_reg>
 				<order>1</order>
 				<browser_id>321</browser_id>

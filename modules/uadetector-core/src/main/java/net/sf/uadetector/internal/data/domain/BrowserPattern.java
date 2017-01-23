@@ -1,12 +1,12 @@
 /*******************************************************************************
  * Copyright 2012 André Rouél
- * 
+ *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
- * 
+ *
  *   http://www.apache.org/licenses/LICENSE-2.0
- * 
+ *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
  * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
@@ -30,7 +30,7 @@ import net.sf.uadetector.internal.util.RegularExpressionConverter;
  * The {@code BrowserPattern} class represents the detection information for a browser specific item.<br>
  * <br>
  * A {@code BrowserPattern} object is immutable, their values cannot be changed after creation.
- * 
+ *
  * @author André Rouél
  */
 @Immutable
@@ -38,7 +38,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 	/**
 	 * Factory that creates instances of {@code BrowserPattern} via method calls.
-	 * 
+	 *
 	 * @author André Rouél
 	 */
 	@NotThreadSafe
@@ -62,7 +62,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 		/**
 		 * Builds a new instance of {@code BrowserPattern} and returns it.
-		 * 
+		 *
 		 * @return a new instance of {@code BrowserPattern}
 		 * @throws net.sf.qualitycheck.exception.IllegalNegativeArgumentException
 		 *             if one of the needed arguments to build an instance of {@code BrowserPattern} is invalid
@@ -76,7 +76,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 		/**
 		 * Sets the identification number of a browser pattern entry.
-		 * 
+		 *
 		 * @param id
 		 *            identification number
 		 * @return this {@code Builder}, for chaining
@@ -94,7 +94,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 		/**
 		 * Sets the identification number (ID) of a browser pattern. The given {@code String} is parsed as a decimal
 		 * number.
-		 * 
+		 *
 		 * @param id
 		 *            ID of a browser pattern as string
 		 * @return this {@code Builder}, for chaining
@@ -115,7 +115,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 		/**
 		 * Sets a regular expression for a browser pattern.
-		 * 
+		 *
 		 * @param pattern
 		 *            compiled representation of a regular expression
 		 * @return this {@code Builder}, for chaining
@@ -130,7 +130,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 		/**
 		 * Converts a PERL regular expression in a Java regular expression and sets it in the {@code Builder}.
-		 * 
+		 *
 		 * @param regex
 		 *            PERL style regular expression to be converted
 		 * @return this {@code Builder}, for chaining
@@ -145,7 +145,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 		/**
 		 * Sets the position of a browser pattern in a set of patterns.
-		 * 
+		 *
 		 * @param position
 		 *            position of a browser pattern
 		 * @return this {@code Builder}, for chaining
@@ -154,7 +154,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 		 */
 		@Nonnull
 		public Builder setPosition(@Nonnegative final int position) {
-			Check.notNegative(position, "position");
+//			Check.notNegative(position, "position");
 
 			this.position = position;
 			return this;
@@ -163,7 +163,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 		/**
 		 * Sets the position of a browser pattern in a set of patterns. The given {@code String} is parsed as a decimal
 		 * number.
-		 * 
+		 *
 		 * @param position
 		 *            position of a browser pattern as string
 		 * @return this {@code Builder}, for chaining
@@ -188,7 +188,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 	/**
 	 * Compares to integers.
-	 * 
+	 *
 	 * @param a
 	 *            first integer
 	 * @param b
@@ -227,7 +227,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 	public BrowserPattern(@Nonnegative final int id, @Nonnull final Pattern pattern, @Nonnegative final int position) {
 		Check.notNegative(id, "id");
 		Check.notNull(pattern, "pattern");
-		Check.notNegative(position, "position");
+//		Check.notNegative(position, "position");
 
 		this.id = id;
 		this.pattern = pattern;
@@ -236,10 +236,10 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 	/**
 	 * Compares all attributes of this instance with the given instance of a {@code BrowserPattern}.
-	 * 
+	 *
 	 * <p>
 	 * This method is <em>consistent with equals</em>.
-	 * 
+	 *
 	 * @param other
 	 *            another instance of {@code OperatingSystemPattern}
 	 * @return negative value if one of the attributes of this instance is less, 0 if equal, or positive value if
@@ -292,7 +292,7 @@ public final class BrowserPattern implements Identifiable, OrderedPattern<Browse
 
 	/**
 	 * Gets the identification number (ID) of a browser pattern.
-	 * 
+	 *
 	 * @return identification number (ID) of a browser pattern
 	 */
 	@Override
