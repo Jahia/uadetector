@@ -50,7 +50,6 @@
 	<modules>
 		<module>modules/uadetector-core</module>
 		<module>modules/uadetector-resources</module>
-		<module>distribution</module>
 	</modules>
 
 	<distributionManagement>
