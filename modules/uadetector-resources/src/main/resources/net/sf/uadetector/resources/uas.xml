@@ -16076,7 +16076,7 @@
 			<browser>
 				<id>35</id>
 				<type>0</type>
-				<name>IE</name>
+				<name>Internet Explorer</name>
 				<url><![CDATA[http://en.wikipedia.org/wiki/Internet_Explorer]]></url>
 				<company><![CDATA[Microsoft Corporation.]]></company>
 				<url_company><![CDATA[http://www.microsoft.com/]]></url_company>
@@ -16886,7 +16886,7 @@
 			<browser>
 				<id>157</id>
 				<type>3</type>
-				<name>IE Mobile</name>
+				<name>Internet Explorer Mobile</name>
 				<url><![CDATA[http://www.microsoft.com/windowsmobile/en-us/downloads/microsoft/internet-explorer-mobile.mspx]]></url>
 				<company><![CDATA[Microsoft Corporation.]]></company>
 				<url_company><![CDATA[http://www.microsoft.com/]]></url_company>
@@ -19056,7 +19056,7 @@
 			<browser>
 				<id>381</id>
 				<type>15</type>
-				<name>IE RSS reader</name>
+				<name>Internet Explorer RSS reader</name>
 				<url><![CDATA[http://en.wikipedia.org/wiki/Windows_RSS_Platform]]></url>
 				<company><![CDATA[Microsoft]]></company>
 				<url_company><![CDATA[http://www.microsoft.com/]]></url_company>
