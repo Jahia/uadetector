@@ -149,7 +149,7 @@ public final class OperatingSystemPattern implements Identifiable, OrderedPatter
 		 *             if the given integer is smaller than {@code 0}
 		 */
 		public Builder setPosition(@Nonnegative final int position) {
-			Check.notNegative(position, "position");
+//			Check.notNegative(position, "position");
 
 			this.position = position;
 			return this;
@@ -202,7 +202,7 @@ public final class OperatingSystemPattern implements Identifiable, OrderedPatter
 	public OperatingSystemPattern(@Nonnegative final int id, @Nonnull final Pattern pattern, @Nonnegative final int position) {
 		Check.notNegative(id, "id");
 		Check.notNull(pattern, "pattern");
-		Check.notNegative(position, "position");
+//		Check.notNegative(position, "position");
 
 		this.id = id;
 		this.pattern = pattern;

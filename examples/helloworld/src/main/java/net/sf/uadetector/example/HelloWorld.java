@@ -64,6 +64,8 @@ public class HelloWorld extends AbstractHandler {
 
 		out.append("You're a <em>");
 		out.append(agent.getName());
+        out.append(" ");
+        out.append(agent.getVersionNumber().getMajor());
 		out.append("</em> on <em>");
 		out.append(agent.getOperatingSystem().getName());
 		out.append("</em>!");

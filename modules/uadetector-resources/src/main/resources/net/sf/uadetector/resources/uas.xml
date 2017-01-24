@@ -15761,6 +15761,26 @@
 				<icon>iphone.png</icon>
 				<os_info_url>/list-of-ua/os-detail?os=iOS 3</os_info_url>
 			</os>
+			<os>
+				<id>147</id>
+				<family>Windows</family>
+				<name>Windows 10</name>
+				<url><![CDATA[http://en.wikipedia.org/wiki/Windows_10]]></url>
+				<company><![CDATA[Microsoft Corporation.]]></company>
+				<url_company><![CDATA[]]></url_company>
+				<icon>windows10.png</icon>
+				<os_info_url>/list-of-ua/os-detail?os=Windows 10</os_info_url>
+			</os>
+			<os>
+				<id>148</id>
+				<family>Windows</family>
+				<name>Windows 10 Mobile</name>
+				<url><![CDATA[http://en.wikipedia.org/wiki/Windows_10_Mobile]]></url>
+				<company><![CDATA[Microsoft Corporation.]]></company>
+				<url_company><![CDATA[]]></url_company>
+				<icon>windows10mobile.png</icon>
+				<os_info_url>/list-of-ua/os-detail?os=Windows 10 Mobile</os_info_url>
+			</os>
 		</operating_systems>
 		<browsers>
 			<browser>
@@ -20472,9 +20492,14 @@
 		</browser_types>
 		<browsers_reg>
 			<browser_reg>
-				<order>-1</order>
+				<order>-2</order>
 				<browser_id>100035</browser_id>
 				<regstring>/^Mozilla.*Windows NT 10\..*Chrome.*Safari.*Edge\/([0-9\.]+)/si</regstring>
+			</browser_reg>
+			<browser_reg>
+				<order>-1</order>
+				<browser_id>100035</browser_id>
+				<regstring>/^Mozilla.*Windows Phone 10\..*Chrome.*Safari.*Edge\/([0-9\.]+)/si</regstring>
 			</browser_reg>
 			<browser_reg>
 				<order>1</order>
@@ -20889,7 +20914,7 @@
 			<browser_reg>
 				<order>83</order>
 				<browser_id>35</browser_id>
-				<regstring>/Mozilla.*Windows NT 6\..*Trident\/7\.0.*rv:([0-9\.]+)/si</regstring>
+				<regstring>/Mozilla.*Windows NT [0-9\.]+\..*Trident\/7\.0.*rv:([0-9\.]+)/si</regstring>
 			</browser_reg>
 			<browser_reg>
 				<order>84</order>
@@ -23924,6 +23949,21 @@
 		</browsers_os>
 		<operating_systems_reg>
 			<operating_system_reg>
+				<order>-3</order>
+				<os_id>148</os_id>
+				<regstring>/^Mozilla.*Windows Phone 10.0/si</regstring>
+			</operating_system_reg>
+			<operating_system_reg>
+				<order>-2</order>
+				<os_id>123</os_id>
+				<regstring>/^Mozilla.*Windows NT 10.* Xbox One/si</regstring>
+			</operating_system_reg>
+			<operating_system_reg>
+				<order>-1</order>
+				<os_id>147</os_id>
+				<regstring>/^Mozilla.*Windows NT 10.0/si</regstring>
+			</operating_system_reg>
+			<operating_system_reg>
 				<order>1</order>
 				<os_id>141</os_id>
 				<regstring>/^Mozilla.*Windows Phone 8.1/si</regstring>
@@ -24031,7 +24071,7 @@
 			<operating_system_reg>
 				<order>22</order>
 				<os_id>123</os_id>
-				<regstring>/^Mozilla.*MSIE.*Windows NT 6.1.* Xbox/si</regstring>
+				<regstring>/^Mozilla.*MSIE.*Windows NT (6|10).* Xbox/si</regstring>
 			</operating_system_reg>
 			<operating_system_reg>
 				<order>23</order>
@@ -25618,45 +25658,50 @@
 			<device_reg>
 				<order>110</order>
 				<device_id>5</device_id>
-				<regstring>/xbox/si</regstring>
+				<regstring>/xbox one/si</regstring>
 			</device_reg>
 			<device_reg>
 				<order>111</order>
+				<device_id>5</device_id>
+				<regstring>/xbox/si</regstring>
+			</device_reg>
+			<device_reg>
+				<order>112</order>
 				<device_id>6</device_id>
 				<regstring>/InettvBrowser/si</regstring>
 			</device_reg>
 			<device_reg>
-				<order>112</order>
+				<order>113</order>
 				<device_id>3</device_id>
 				<regstring>/j2me/si</regstring>
 			</device_reg>
 			<device_reg>
-				<order>113</order>
+				<order>114</order>
 				<device_id>3</device_id>
 				<regstring>/.*\/.*CFNetwork\/459 Darwin\//si</regstring>
 			</device_reg>
 			<device_reg>
-				<order>114</order>
+				<order>115</order>
 				<device_id>3</device_id>
 				<regstring>/.*\/.*CFNetwork\/(548\.0\.3|548\.0\.4|548\.1\.4) Darwin\//si</regstring>
 			</device_reg>
 			<device_reg>
-				<order>115</order>
+				<order>116</order>
 				<device_id>3</device_id>
 				<regstring>/.*\/.*CFNetwork\/(672\.0\.2|672\.0\.8|672\.1\.12|672\.1\.13|672\.1\.14|672\.1\.15) Darwin\//si</regstring>
 			</device_reg>
 			<device_reg>
-				<order>116</order>
+				<order>117</order>
 				<device_id>3</device_id>
 				<regstring>/.*\/.*CFNetwork\/(602|609|609\.1\.4) Darwin\//si</regstring>
 			</device_reg>
 			<device_reg>
-				<order>117</order>
+				<order>118</order>
 				<device_id>3</device_id>
 				<regstring>/.*\/.*CFNetwork\/(485\.2|485\.10\.2|485\.12\.7|485\.12\.30|485\.13\.9) Darwin\//si</regstring>
 			</device_reg>
 			<device_reg>
-				<order>118</order>
+				<order>119</order>
 				<device_id>4</device_id>
 				<regstring>/^Mozilla.*Android.*Tablet.*AppleWebKit/si</regstring>
 			</device_reg>

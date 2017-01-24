@@ -56,6 +56,8 @@ public class HelloServlet extends HttpServlet {
 
 		out.append("You're a <em>");
 		out.append(agent.getName());
+		out.append(" ");
+		out.append(agent.getVersionNumber().getMajor());
 		out.append("</em> on <em>");
 		out.append(agent.getOperatingSystem().getName());
 		out.append("</em>!");
