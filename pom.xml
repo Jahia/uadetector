@@ -84,7 +84,6 @@
 		<maven-bundle-plugin.version>2.5.3</maven-bundle-plugin.version>
 		<maven-changelog-plugin.version>2.3</maven-changelog-plugin.version>
 		<maven-compiler-plugin.version>3.1</maven-compiler-plugin.version>
-		<maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
 		<maven-javadoc-plugin.version>2.9.1</maven-javadoc-plugin.version>
 		<maven-jxr-plugin.version>2.4</maven-jxr-plugin.version>
 		<maven-pmd-plugin.version>3.2</maven-pmd-plugin.version>
@@ -236,11 +235,6 @@
 					<groupId>org.codehaus.mojo</groupId>
 					<artifactId>clirr-maven-plugin</artifactId>
 					<version>${clirr-maven-plugin.version}</version>
-				</plugin>
-				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-gpg-plugin</artifactId>
-					<version>${maven-gpg-plugin.version}</version>
 				</plugin>
 				<plugin>
 					<groupId>org.codehaus.mojo</groupId>
@@ -521,23 +515,6 @@
 								</jdk>
 							</toolchains>
 						</configuration>
-					</plugin>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
-						<executions>
-							<execution>
-								<id>sign-artifacts</id>
-								<phase>verify</phase>
-								<goals>
-									<goal>sign</goal>
-								</goals>
-								<configuration>
-									<keyname>687C81D51413645E</keyname>
-									<useAgent>true</useAgent>
-								</configuration>
-							</execution>
-						</executions>
 					</plugin>
 				</plugins>
 			</build>
